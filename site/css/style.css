@@ -222,8 +222,8 @@ video {
 }
 .hero-domain-tag {
   position: absolute;
-  top: 20%;
-  right: 8%;
+  bottom: 40px;
+  right: 40px;
   z-index: 2;
   font-family: var(--font-head);
   font-size: clamp(20px, 2.6vw, 32px);
