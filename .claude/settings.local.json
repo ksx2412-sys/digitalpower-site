@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(file \"/Users/ksx/Desktop/strona/horse.png\" \"/Users/ksx/Desktop/strona/public:media:horse.jpg\"; echo \"---downloads---\"; ls -la ~/Downloads | grep -i \"animate_storyboard\" )",
+      "mcp__709f451d-e4be-47d8-972b-2937e69cd543__netlify-deploy-services-updater",
+      "Bash(npx -y @netlify/mcp@latest --site-id eccbe8ea-66fe-49c7-b390-89750ef6d236 --proxy-path \"https://netlify-mcp.netlify.app/proxy/eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..v8cCMKcJ08Y72Z4P.YKG3RoLnT0fp5kFkzQHQ5-bv9H0sIVYHUPZK02HOB41L2cmConrAOsilVuhLpYm1kmwo2eqhYJX1NTOAFVNMrxXA3GmldavhklYiorun5yC4ojiYrLlbrqn9zvHqN2ku58QfRyXSzVCMB0Txosyd9ooqKgsqxiOLReL2cA93TxAEa2uPF607DYky6JVN-Zna8SS7GrNh5VxjQvDZWSUdnEQjawXlsObQti2SotfuLQYcbqcKa8yAk0rXVH79hNlyoH76sfw6fV11xNQeELdt4mTEgQ6aloNHqj9SPGObWOKvbNW9wndwoqn0IMGmGfSyySEEA9xq7wiC7CAd7UyOFpsvBNtt--V9bZNRL7lLyucnw9RrvUuYFPtkCATq-yT8RAJIrTLG.q111TEq0vaitpAw1q8Rt6w\")",
+      "Bash(npx -y @netlify/mcp@latest --site-id eccbe8ea-66fe-49c7-b390-89750ef6d236 --proxy-path \"https://netlify-mcp.netlify.app/proxy/eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..WiXoJCcgt6Il2o7g.PmdTPsnMzPbRRNakDwS4wwD3Zt4NG-bQwgCoF4wLmlPBvbKbwonbrtEmqSRMOnWqp06M39WDEsNL08Dz57LA7Gb9dR4H25-xVdiao8T7YLmaS7QeU6VtNMvMoOOkYDMXWLyVyFWP_nTjE42Cty8uC6Qob2NqgkNe0YkvJJezc9oImr-CJPljoBnfd165cUKpVuiA7lYjOpgBe6XE3qz4LPWoJWsdXofQLP5URw-c1TJYuc0Pjp1s6pFpg11hy7W3kXAvTLJlvHRI8Vs9LBU-A_W6Y91uou9nPx2IVyQeKXnbkmSEmzyMxZWv38H1bBlyBw826ErW7ZU_3PPzgrykGIwtG-TfiL74yL44u-cZzJu2iVaF5Iahze89NAb0kC6ppvBOXDoy.QoRxwTbE84V_CrRJU_3SXw\")"
+    ]
+  }
+}

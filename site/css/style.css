@@ -18,6 +18,28 @@
   --font-head: 'Fraunces', Georgia, serif;
 }
 
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideInDown {
+  from { opacity: 0; transform: translateY(-40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
@@ -34,6 +56,37 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.15; margin: 0; }
 p { margin: 0; }
 ul { margin: 0; padding: 0; list-style: none; }
 button { font-family: inherit; cursor: pointer; }
+
+/* Animation Classes */
+.fade-in {
+  animation: fadeIn 0.8s ease-out;
+}
+.slide-in-up {
+  animation: slideInUp 0.8s ease-out;
+}
+.slide-in-down {
+  animation: slideInDown 0.8s ease-out;
+}
+.scale-in {
+  animation: scaleIn 0.8s ease-out;
+}
+.pulse-slow {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Video animations */
+video {
+  animation: fadeIn 0.6s ease-out;
+}
+.hero-media video {
+  animation: fadeIn 1.2s ease-out;
+}
+.gallery-tile video {
+  transition: transform 0.3s ease-out;
+}
+.gallery-tile:hover video {
+  transform: scale(1.05);
+}
 
 .container {
   width: 100%;
