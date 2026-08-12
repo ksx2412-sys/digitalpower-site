@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://digitalpower.art/</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://digitalpower.art/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalpower.art/" />
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://digitalpower.art/polityka-prywatnosci.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://digitalpower.art/polityka-prywatnosci.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/datenschutz.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/privacy-policy.html" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://digitalpower.art/datenschutz.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://digitalpower.art/polityka-prywatnosci.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/datenschutz.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/privacy-policy.html" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://digitalpower.art/impressum.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/impressum.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/legal-notice.html" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://digitalpower.art/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://digitalpower.art/polityka-prywatnosci.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/datenschutz.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/privacy-policy.html" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://digitalpower.art/legal-notice.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/impressum.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/legal-notice.html" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>
