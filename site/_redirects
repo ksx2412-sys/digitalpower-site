@@ -1,7 +1,0 @@
-# Redirect HTTP to HTTPS (all www variants)
-http://www.digitalpower.art/* https://digitalpower.art/:splat 301
-http://digitalpower.art/* https://digitalpower.art/:splat 301
-https://www.digitalpower.art/* https://digitalpower.art/:splat 301
-
-# Ensure consistent trailing slash for root
-https://digitalpower.art https://digitalpower.art/ 301
