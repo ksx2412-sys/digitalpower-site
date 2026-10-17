@@ -1,4 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://digitalpower.art/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://digitalpower.art/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://digitalpower.art/pl/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalpower.art/"/>
+    <priority>1.0</priority></url>
+  <url><loc>https://digitalpower.art/leistungen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/leistungen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://digitalpower.art/pl/oferta/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/en/services/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalpower.art/leistungen/"/>
+    <priority>0.8</priority></url>
+  <url><loc>https://digitalpower.art/3d-druck/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/3d-druck/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://digitalpower.art/pl/druk-3d/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/en/3d-printing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalpower.art/3d-druck/"/>
+    <priority>1.0</priority></url>
+  <url><loc>https://digitalpower.art/drohnenaufnahmen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/drohnenaufnahmen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://digitalpower.art/pl/zdjecia-z-drona/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/en/drone-photography/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalpower.art/drohnenaufnahmen/"/>
+    <priority>0.8</priority></url>
+  <url><loc>https://digitalpower.art/digital-marketing/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/digital-marketing/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://digitalpower.art/pl/marketing-cyfrowy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/en/digital-marketing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalpower.art/digital-marketing/"/>
+    <priority>0.8</priority></url>
+  <url><loc>https://digitalpower.art/kontakt/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/kontakt/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://digitalpower.art/pl/kontakt/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalpower.art/kontakt/"/>
+    <priority>0.8</priority></url>
+  <url><loc>https://digitalpower.art/pl/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://digitalpower.art/pl/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalpower.art/"/>
+    <priority>1.0</priority></url>
+  <url><loc>https://digitalpower.art/pl/oferta/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/leistungen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://digitalpower.art/pl/oferta/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/en/services/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalpower.art/leistungen/"/>
+    <priority>0.8</priority></url>
+  <url><loc>https://digitalpower.art/pl/druk-3d/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/3d-druck/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://digitalpower.art/pl/druk-3d/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/en/3d-printing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalpower.art/3d-druck/"/>
+    <priority>1.0</priority></url>
+  <url><loc>https://digitalpower.art/pl/zdjecia-z-drona/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/drohnenaufnahmen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://digitalpower.art/pl/zdjecia-z-drona/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/en/drone-photography/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalpower.art/drohnenaufnahmen/"/>
+    <priority>0.8</priority></url>
+  <url><loc>https://digitalpower.art/pl/marketing-cyfrowy/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/digital-marketing/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://digitalpower.art/pl/marketing-cyfrowy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/en/digital-marketing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalpower.art/digital-marketing/"/>
+    <priority>0.8</priority></url>
+  <url><loc>https://digitalpower.art/pl/kontakt/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/kontakt/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://digitalpower.art/pl/kontakt/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalpower.art/kontakt/"/>
+    <priority>0.8</priority></url>
+  <url><loc>https://digitalpower.art/en/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://digitalpower.art/pl/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalpower.art/"/>
+    <priority>1.0</priority></url>
+  <url><loc>https://digitalpower.art/en/services/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/leistungen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://digitalpower.art/pl/oferta/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/en/services/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalpower.art/leistungen/"/>
+    <priority>0.8</priority></url>
+  <url><loc>https://digitalpower.art/en/3d-printing/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/3d-druck/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://digitalpower.art/pl/druk-3d/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/en/3d-printing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalpower.art/3d-druck/"/>
+    <priority>1.0</priority></url>
+  <url><loc>https://digitalpower.art/en/drone-photography/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/drohnenaufnahmen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://digitalpower.art/pl/zdjecia-z-drona/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/en/drone-photography/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalpower.art/drohnenaufnahmen/"/>
+    <priority>0.8</priority></url>
+  <url><loc>https://digitalpower.art/en/digital-marketing/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/digital-marketing/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://digitalpower.art/pl/marketing-cyfrowy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/en/digital-marketing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalpower.art/digital-marketing/"/>
+    <priority>0.8</priority></url>
+  <url><loc>https://digitalpower.art/en/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/kontakt/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://digitalpower.art/pl/kontakt/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalpower.art/kontakt/"/>
+    <priority>0.8</priority></url>
+  <url><loc>https://digitalpower.art/impressum.html</loc><priority>0.2</priority></url>
+  <url><loc>https://digitalpower.art/datenschutz.html</loc><priority>0.2</priority></url>
+  <url><loc>https://digitalpower.art/ki-hinweis.html</loc><priority>0.2</priority></url>
 </urlset>
