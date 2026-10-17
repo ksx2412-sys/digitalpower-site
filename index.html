@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de"><head><script>if(window.top!==window.self){try{window.top.location=window.self.location.href}catch(e){document.documentElement.style.display='none'}}</script><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-SiVa8EWPNWLi+AF7O3WtsR0x0dBnLUfu2Thv67cEu+M=' 'sha256-j/Wc60ZZtAhi4P52xNTEYLDz7u+lQ+F7Erx4teD/cgg='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src 'none'; worker-src 'none'; manifest-src 'self'; upgrade-insecure-requests"><meta name="referrer" content="strict-origin-when-cross-origin"><meta http-equiv="X-Content-Type-Options" content="nosniff"><meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="de" translate="no"><head><script>if(window.top!==window.self){try{window.top.location=window.self.location.href}catch(e){document.documentElement.style.display='none'}}</script><meta charset="utf-8"><meta name="google" content="notranslate"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-SiVa8EWPNWLi+AF7O3WtsR0x0dBnLUfu2Thv67cEu+M=' 'sha256-q8OUZ9kQ/UGX5GB2FoZJ8aoYiMBad6qcav6RXFXjzos='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src 'none'; worker-src 'none'; manifest-src 'self'; upgrade-insecure-requests"><meta name="referrer" content="strict-origin-when-cross-origin"><meta http-equiv="X-Content-Type-Options" content="nosniff"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Digital 3D Power – 3D-Druck, Drohnenaufnahmen & Digital Marketing in Dortmund</title>
 <meta name="description" content="3D-Druck nach Datei oder Skizze, Drohnenfotos und -videos in 4K sowie Websites und Social-Media-Inhalte mit KI. Familienbetrieb aus Dortmund – Deutsch und Polski.">
 <link rel="canonical" href="https://digitalpower.art/">
@@ -666,7 +666,7 @@ h1 i{font-weight:600;display:block}
 </style>
 
 <header class="pasek">
-  <a class="logo" href="#start" aria-label="digitalpower.art — Start">
+  <a class="logo" href="#start" aria-label="digitalpower.art — Start" translate="no">
     <img src="media/logo-circle.png" alt="">
     <span class="adres"><b class="w-digital">digital</b><b class="w-power">power</b><i class="w-art">.art</i></span>
   </a>
@@ -982,7 +982,7 @@ h1 i{font-weight:600;display:block}
   <footer class="stopka">
     <div class="stopka-gora">
       <div>
-        <a class="logo" href="#start"><img src="media/logo-circle.png" alt=""><span><b class="w-digital">Digital</b><em>3D</em><b class="w-power">Power</b></span></a>
+        <a class="logo" href="#start" translate="no"><img src="media/logo-circle.png" alt=""><span><b class="w-digital">Digital</b><em>3D</em><b class="w-power">Power</b></span></a>
         <p data-t="st_p">3D-Druck, Drohnenaufnahmen und Digital Marketing aus Dortmund.</p>
         <nav class="social stopka-social" aria-label="Social Media"><a href="https://www.instagram.com/digitalpower.art/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a>
     <a href="https://www.tiktok.com/@digitalpower.art" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V2c.5 3 2.5 5 6 5"/></svg></a>
@@ -1335,7 +1335,7 @@ h1 i{font-weight:600;display:block}
   };
   document.querySelectorAll('.jezyki button').forEach(b=>b.addEventListener('click',()=>ustaw(b.dataset.lang)));
   window.__ustaw=ustaw;
-  const h0=(location.hash.match(/^#lang-(de|pl|en)$/)||[])[1]; ustaw(h0||'de'); if(h0) history.replaceState(null,'',location.pathname+location.search); if(window.__odswiezStyl) window.__odswiezStyl(); if(window.__pokaz) window.__pokaz();
+  const h0=(location.hash.match(/^#lang-(de|pl|en)$/)||[])[1]; const jp=()=>{for(const x of (navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'de'])){const k=String(x).slice(0,2).toLowerCase();if(k==='de'||k==='pl'||k==='en')return k;}return 'de';}; ustaw(h0||jp()); if(h0) history.replaceState(null,'',location.pathname+location.search); if(window.__odswiezStyl) window.__odswiezStyl(); if(window.__pokaz) window.__pokaz();
 })();
 </script>
 
