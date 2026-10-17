@@ -1,0 +1,6 @@
+Digital 3D Power – digitalpower.art
+
+Fonts: Fraunces, Sora – SIL Open Font License 1.1 (see fonts/LICENSE-*.txt)
+three.js – MIT License, Copyright 2010-2021 Three.js Authors (header in three.min.js)
+
+All photos, videos and texts: (c) Digital 3D Power. AI-generated content is labelled on the website.

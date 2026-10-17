@@ -1,0 +1,4 @@
+Contact: mailto:dpx369@gmail.com
+Expires: 2027-10-31T23:00:00.000Z
+Preferred-Languages: de, pl, en
+Canonical: https://digitalpower.art/.well-known/security.txt
