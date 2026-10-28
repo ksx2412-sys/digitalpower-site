@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl" data-sl="pl" translate="no"><head><script>if(window.top!==window.self){try{window.top.location=window.self.location.href}catch(e){document.documentElement.style.display='none'}}</script><meta charset="utf-8"><meta name="google" content="notranslate"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-SiVa8EWPNWLi+AF7O3WtsR0x0dBnLUfu2Thv67cEu+M=' 'sha256-E+0zHoazRIBJR6TaJuC0F9G8wwHIGp0Ljw3gS4YJtwQ='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self'; font-src 'self'; connect-src 'self' https://script.google.com https://script.googleusercontent.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src 'none'; worker-src 'none'; manifest-src 'self'; upgrade-insecure-requests"><meta name="referrer" content="strict-origin-when-cross-origin"><meta http-equiv="X-Content-Type-Options" content="nosniff"><meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="pl" data-sl="pl" translate="no"><head><script>if(window.top!==window.self){try{window.top.location=window.self.location.href}catch(e){document.documentElement.style.display='none'}}</script><meta charset="utf-8"><meta name="google" content="notranslate"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-SiVa8EWPNWLi+AF7O3WtsR0x0dBnLUfu2Thv67cEu+M=' 'sha256-MCIvTyzL2/g9FqeN5dQV9pQkvNF8J7Xc2RZbr4yNyhQ='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self'; font-src 'self'; connect-src 'self' https://script.google.com https://script.googleusercontent.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src 'none'; worker-src 'none'; manifest-src 'self'; upgrade-insecure-requests"><meta name="referrer" content="strict-origin-when-cross-origin"><meta http-equiv="X-Content-Type-Options" content="nosniff"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Digital 3D Power – druk 3D, drony i marketing w Dortmundzie</title>
 <meta name="description" content="Druk 3D z pliku lub szkicu, zdjęcia i filmy 4K z drona oraz strony i treści social media z AI. Firma rodzinna w Dortmundzie – po polsku i niemiecku.">
 <script src="/trasy.js"></script><link rel="canonical" href="https://digitalpower.art/pl/"><link rel="alternate" hreflang="de" href="https://digitalpower.art/"><link rel="alternate" hreflang="pl" href="https://digitalpower.art/pl/"><link rel="alternate" hreflang="en" href="https://digitalpower.art/en/"><link rel="alternate" hreflang="x-default" href="https://digitalpower.art/">
@@ -1128,7 +1128,7 @@ h1 i{font-weight:600;display:block}
   // ceny ustalone przez Krisa 14.10.2026 (punkt wyjścia: średnia konkurencji −15%)
   // koszt filamentu za 1 kg (do kalkulacji, nie pokazujemy): PLA+ 11,99 · PETG 13,99 · ASA 25,00 · TPU 24,87
   const CENNIK={
-    druk:{k:'var(--czerwien)',rabat:1,stawki:[{n:{de:'Konstruktion / 3D-Modell',pl:'Projekt / model 3D',en:'Design / 3D model'},jest:'50 €'}],min:{de:'Mindestauftrag 5 €',pl:'Minimalne zamówienie 5 €',en:'Minimum order €5'},karta:{od:'5 €',czas:{de:'2–4 Werktage',pl:'2–4 dni robocze',en:'2–4 working days'}},
+    druk:{k:'var(--czerwien)',rabat:1,stawki:[{n:{de:'Konstruktion / 3D-Modell',pl:'Projekt / model 3D',en:'Design / 3D model'},jest:'50 €'}],karta:{od:'5 €',czas:{de:'2–4 Werktage',pl:'2–4 dni robocze',en:'2–4 working days'}},
       pakiety:[
         {n:{de:'Einzelteil',pl:'Pojedyncza sztuka',en:'Single part'},od:'5 €',czas:{de:'2–4 Werktage',pl:'2–4 dni robocze',en:'2–4 working days'},o:{de:'Druck nach Ihrer 3MF- oder STL-Datei',pl:'Druk z Twojego pliku 3MF lub STL',en:'Printed from your 3MF or STL file'}},
         {n:{de:'Modell nach Skizze',pl:'Model ze szkicu',en:'Model from a sketch'},od:'40 €',czas:{de:'5–7 Werktage',pl:'5–7 dni roboczych',en:'5–7 working days'},o:{de:'Wir entwerfen das 3D-Modell und drucken es',pl:'Projektujemy model 3D i go drukujemy',en:'We design the 3D model and print it'},top:1},
@@ -1189,34 +1189,40 @@ h1 i{font-weight:600;display:block}
   const _sty2=window.__odswiezStyl;window.__odswiezStyl=()=>{_sty2&&_sty2();tlumaczAria();};
   document.querySelectorAll('.jezyki button').forEach(b=>b.addEventListener('click',()=>setTimeout(tlumaczAria,0)));
   /* ===== KALKULATOR DRUKU 3D (orientacyjny) – tu edytujesz parametry ===== */
-  // Kalibracja: żyrafa flexi 164×122×29 mm, czarny PLA, Bambu P1S: 23,3 g/szt (z podporami), 2 h 22 min/szt → cena 10 €/szt (decyzja Krisa 14.10.2026)
+  // Kalibracja 28.10.2026 na Bambu P1S, dysza 0,4, warstwa 0,08 mm (Bambu Studio):
+  //  kostka 20 mm (8 cm³, 24 cm², 2 ścianki, 15%): 3,89 g, 29 min łącznie
+  //  smok flexi 120 mm (32,6 cm³, 137 cm², 3 ścianki, 15%, podpory drzewkowe): 24,38 g (podpory 0,90 g), 3 h 27 min
+  // Cena = przygotowanie (raz na zlecenie) + filament + czas drukarki. Bez minimalnej kwoty (decyzja Krisa 28.10.2026).
   const KALK={
-    zaGram:{PLA:0.30,PETG:0.33,ASA:0.40,TPU:0.45},  // € za gram (wydruk z podporami)
-    przygotowanie:3,      // € za sztukę (przygotowanie, zdjęcie z płyty, podpory)
-    jakoscMnoznik:{szybka:0.9,standard:1,wysoka:1.3}, // dopłata za jakość
-    minimum:5,           // minimalna kwota zamówienia
-    podpory:1.2,          // +20% materiału na podpory
-    mat:{PLA:{g:1.24},PETG:{g:1.27},ASA:{g:1.07},TPU:{g:1.21,wolniej:0.5}}, // gęstość g/cm³
-    jakosc:{szybka:14,standard:10,wysoka:6},   // g/h – tylko do pokazania czasu
-    wypelnienie:{standard:0.275,wyzsze:0.42,premium:0.6}, // udział objętości (ścianki + wypełnienie)
+    przygotowanie:5,      // € za zlecenie (sprawdzenie pliku, ustawienie, zdjęcie z płyty, podpory, pakowanie)
+    zaGodzine:3.5,        // € za godzinę pracy drukarki
+    zaKg:{PLA:13,PETG:15,ASA:20,TPU:25}, // € za kg filamentu – Basic
+    specjalny:14,         // € za kg dopłaty: Silk i kolory specjalne (PLA Silk = 13+14 = 27 €/kg)
+    mat:{PLA:{g:1.24},PETG:{g:1.27},ASA:{g:1.07},TPU:{g:1.21,wolniej:2}}, // gęstość g/cm³, wolniej = mnożnik czasu
+    warstwa:{szybka:0.24,standard:0.2,wysoka:0.08},   // wysokość warstwy w mm
+    wypelnienie:{standard:{t:0.086,f:0.15,w:1},wyzsze:{t:0.12,f:0.25,w:1.25},premium:{t:0.16,f:0.40,w:1.5}}, // t = grubość ścianek w cm, f = wypełnienie środka, w = mnożnik czasu za ścianki
+    podpory:1.04,         // +4% materiału na podpory (smok: 0,90 g z 24,38 g)
+    czasStart:0.11,       // h: nagrzewanie, kalibracja, czyszczenie dyszy (Bambu: 6 min 50 s)
+    czasScianki:0.00155,  // h na (cm² powierzchni / mm warstwy) – skalibrowane na kostce i smoku
     stol:256              // pole robocze P1S w mm
   };
-  Object.assign(T.de,{k_q:'Druckqualität',k_q1:'Schnell',k_q2:'Standard',k_q3:'Fein',k_i:'Füllung',k_i1:'Standard',k_i2:'Höher',k_i3:'Premium',k_prev:'3D-Vorschau',k_prev0:'Nach dem Hochladen sehen Sie hier Ihr Modell.',k_vol:'Volumen',k_dim:'Maße',k_w:'Gewicht ca.',k_t:'Druckzeit ca.',k_calc:'Preis berechnen',k_res:'Richtpreis',k_szt:'pro Stück',k_need:'Bitte zuerst eine Datei hochladen.',k_err:'Die Datei konnte nicht gelesen werden. Senden Sie sie trotzdem – wir prüfen sie manuell.',k_big:'Das Modell ist größer als unser Bauraum (256 × 256 × 256 mm). Wir teilen es oder melden uns mit einer Lösung.',k_note:'Orientierungswert. Den verbindlichen Preis nennen wir nach Prüfung der Datei. Für kleine Aufträge kontaktieren Sie uns am besten direkt.',k_min:'Mindestauftrag 5 €',k_load:'Datei wird gelesen…',k_msg:'Qualität {q}, Füllung {i}. Richtpreis ca. {p} € ({w} g, ca. {t}).'});
-  Object.assign(T.pl,{k_q:'Jakość druku',k_q1:'Szybka',k_q2:'Standard',k_q3:'Wysoka',k_i:'Wypełnienie',k_i1:'Standard',k_i2:'Wyższe',k_i3:'Premium',k_prev:'Podgląd 3D',k_prev0:'Po wgraniu pliku zobaczysz tu swój model.',k_vol:'Objętość',k_dim:'Wymiary',k_w:'Waga ok.',k_t:'Czas druku ok.',k_calc:'Oblicz wycenę',k_res:'Cena orientacyjna',k_szt:'za sztukę',k_need:'Najpierw wgraj plik.',k_err:'Nie udało się odczytać pliku. Wyślij go mimo to – sprawdzimy go ręcznie.',k_big:'Model jest większy niż pole robocze drukarki (256 × 256 × 256 mm). Podzielimy go albo zaproponujemy rozwiązanie.',k_note:'Wartość orientacyjna. Wiążącą cenę podamy po sprawdzeniu pliku. Przy małych zamówieniach najlepiej skontaktuj się z nami bezpośrednio.',k_min:'Minimalne zamówienie 5 €',k_load:'Wczytuję plik…',k_msg:'Jakość {q}, wypełnienie {i}. Cena orientacyjna ok. {p} € ({w} g, ok. {t}).'});
-  Object.assign(T.en,{k_q:'Print quality',k_q1:'Fast',k_q2:'Standard',k_q3:'Fine',k_i:'Infill',k_i1:'Standard',k_i2:'Higher',k_i3:'Premium',k_prev:'3D preview',k_prev0:'Your model appears here after upload.',k_vol:'Volume',k_dim:'Size',k_w:'Weight approx.',k_t:'Print time approx.',k_calc:'Calculate price',k_res:'Guide price',k_szt:'per piece',k_need:'Please upload a file first.',k_err:'The file could not be read. Send it anyway – we will check it manually.',k_big:'The model is larger than our build volume (256 × 256 × 256 mm). We will split it or come back with a solution.',k_note:'Guide value. We confirm the binding price after checking the file. For small orders, please contact us directly.',k_min:'Minimum order €5',k_load:'Reading file…',k_msg:'Quality {q}, infill {i}. Guide price approx. €{p} ({w} g, approx. {t}).'});
+  Object.assign(T.de,{k_f:'Filament',k_f1:'Basic',k_f2:'Silk / Spezialfarben',k_q:'Druckqualität',k_q1:'Schnell',k_q2:'Standard',k_q3:'Fein',k_i:'Füllung',k_i1:'Standard',k_i2:'Höher',k_i3:'Premium',k_prev:'3D-Vorschau',k_prev0:'Nach dem Hochladen sehen Sie hier Ihr Modell.',k_vol:'Volumen',k_dim:'Maße',k_w:'Gewicht ca.',k_t:'Druckzeit ca.',k_calc:'Preis berechnen',k_res:'Richtpreis',k_szt:'pro Stück',k_need:'Bitte zuerst eine Datei hochladen.',k_err:'Die Datei konnte nicht gelesen werden. Senden Sie sie trotzdem – wir prüfen sie manuell.',k_big:'Das Modell ist größer als unser Bauraum (256 × 256 × 256 mm). Wir teilen es oder melden uns mit einer Lösung.',k_note:'Orientierungswert. Den verbindlichen Preis nennen wir nach Prüfung der Datei. Für kleine Aufträge kontaktieren Sie uns am besten direkt.',k_min:'Mindestauftrag 5 €',k_load:'Datei wird gelesen…',k_msg:'Qualität {q}, Füllung {i}. Richtpreis ca. {p} € ({w} g, ca. {t}).'});
+  Object.assign(T.pl,{k_f:'Filament',k_f1:'Basic',k_f2:'Silk / kolory specjalne',k_q:'Jakość druku',k_q1:'Szybka',k_q2:'Standard',k_q3:'Wysoka',k_i:'Wypełnienie',k_i1:'Standard',k_i2:'Wyższe',k_i3:'Premium',k_prev:'Podgląd 3D',k_prev0:'Po wgraniu pliku zobaczysz tu swój model.',k_vol:'Objętość',k_dim:'Wymiary',k_w:'Waga ok.',k_t:'Czas druku ok.',k_calc:'Oblicz wycenę',k_res:'Cena orientacyjna',k_szt:'za sztukę',k_need:'Najpierw wgraj plik.',k_err:'Nie udało się odczytać pliku. Wyślij go mimo to – sprawdzimy go ręcznie.',k_big:'Model jest większy niż pole robocze drukarki (256 × 256 × 256 mm). Podzielimy go albo zaproponujemy rozwiązanie.',k_note:'Wartość orientacyjna. Wiążącą cenę podamy po sprawdzeniu pliku. Przy małych zamówieniach najlepiej skontaktuj się z nami bezpośrednio.',k_min:'Minimalne zamówienie 5 €',k_load:'Wczytuję plik…',k_msg:'Jakość {q}, wypełnienie {i}. Cena orientacyjna ok. {p} € ({w} g, ok. {t}).'});
+  Object.assign(T.en,{k_f:'Filament',k_f1:'Basic',k_f2:'Silk / special colours',k_q:'Print quality',k_q1:'Fast',k_q2:'Standard',k_q3:'Fine',k_i:'Infill',k_i1:'Standard',k_i2:'Higher',k_i3:'Premium',k_prev:'3D preview',k_prev0:'Your model appears here after upload.',k_vol:'Volume',k_dim:'Size',k_w:'Weight approx.',k_t:'Print time approx.',k_calc:'Calculate price',k_res:'Guide price',k_szt:'per piece',k_need:'Please upload a file first.',k_err:'The file could not be read. Send it anyway – we will check it manually.',k_big:'The model is larger than our build volume (256 × 256 × 256 mm). We will split it or come back with a solution.',k_note:'Guide value. We confirm the binding price after checking the file. For small orders, please contact us directly.',k_min:'Minimum order €5',k_load:'Reading file…',k_msg:'Quality {q}, infill {i}. Guide price approx. €{p} ({w} g, approx. {t}).'});
   const W=document.getElementById('wycena');
   const wyb=W.querySelector('.wybor'), kolDiv=W.querySelector('[data-grupa="kol"]').parentElement;
   const grupa=(id,etyk,opcje,dom)=>{const d=document.createElement('div');d.innerHTML=`<span class="wybor-label" data-t="${etyk}">${T.de[etyk]}</span><div class="chipy" data-k="${id}">`+opcje.map(([v,k])=>`<button type="button" class="chip" data-v="${v}" aria-pressed="${v===dom}" data-t="${k}">${T.de[k]}</button>`).join('')+'</div>';
     d.querySelector('.chipy').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;d.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));licz();});return d;};
   kolDiv.insertAdjacentElement('beforebegin',grupa('q','k_q',[['szybka','k_q1'],['standard','k_q2'],['wysoka','k_q3']],'standard'));
   kolDiv.insertAdjacentElement('beforebegin',grupa('i','k_i',[['standard','k_i1'],['wyzsze','k_i2'],['premium','k_i3']],'standard'));
+  kolDiv.insertAdjacentElement('beforebegin',grupa('f','k_f',[['basic','k_f1'],['spezial','k_f2']],'basic'));
   // podgląd 3D
   const pv=document.createElement('div');pv.className='podglad3d';
   pv.innerHTML=`<div class="p3-scena"><canvas aria-hidden="true"></canvas><p class="p3-pusto" data-t="k_prev0">${T.de.k_prev0}</p><span class="p3-tytul" data-t="k_prev">${T.de.k_prev}</span></div>
   <dl class="p3-dane"><div><dt data-t="k_vol">${T.de.k_vol}</dt><dd id="k-vol">–</dd></div><div><dt data-t="k_dim">${T.de.k_dim}</dt><dd id="k-dim">–</dd></div><div><dt data-t="k_w">${T.de.k_w}</dt><dd id="k-w">–</dd></div><div><dt data-t="k_t">${T.de.k_t}</dt><dd id="k-t">–</dd></div></dl><p class="p3-info" id="k-info" role="status"></p>`;
   W.querySelector('#w-drop').insertAdjacentElement('afterend',pv);
   const wyn=document.createElement('div');wyn.className='w-wynik';
-  wyn.innerHTML=`<button type="button" class="btn btn-obrys" id="k-licz" data-t="k_calc">${T.de.k_calc}</button><div class="w-cena"><span data-t="k_res">${T.de.k_res}</span><b id="k-cena">–</b><small id="k-szt"></small></div><p class="w-uwaga"><span data-t="k_note">${T.de.k_note}</span> <span data-t="k_min">${T.de.k_min}</span></p>`;
+  wyn.innerHTML=`<button type="button" class="btn btn-obrys" id="k-licz" data-t="k_calc">${T.de.k_calc}</button><div class="w-cena"><span data-t="k_res">${T.de.k_res}</span><b id="k-cena">–</b><small id="k-szt"></small></div><p class="w-uwaga"><span data-t="k_note">${T.de.k_note}</span></p>`;
   W.querySelector('.wycena-dol').insertAdjacentElement('beforebegin',wyn);
   // ---- odczyt plików STL / 3MF ----
   const czytajSTL=buf=>{const dv=new DataView(buf);const n=buf.byteLength>=84?dv.getUint32(80,true):0;
@@ -1259,11 +1265,12 @@ h1 i{font-weight:600;display:block}
   const KE={de:{gross:'Die Datei ist größer als 50 MB. Senden Sie sie trotzdem – wir prüfen sie manuell und nennen den Preis.',zlozony:'Das Modell ist sehr komplex. Senden Sie es trotzdem – wir prüfen es manuell und nennen den Preis.',otwarty:'Das Modell ist nicht geschlossen (Löcher oder lose Flächen), daher berechnen wir hier keinen Preis. Senden Sie es trotzdem – wir prüfen es manuell.'},
     pl:{gross:'Plik jest większy niż 50 MB. Wyślij go mimo to – sprawdzimy go ręcznie i podamy cenę.',zlozony:'Model jest bardzo złożony. Wyślij go mimo to – sprawdzimy go ręcznie i podamy cenę.',otwarty:'Model nie jest zamkniętą bryłą (dziury lub luźne powierzchnie), więc nie liczymy tu ceny. Wyślij go mimo to – sprawdzimy go ręcznie.'},
     en:{gross:'The file is larger than 50 MB. Send it anyway – we will check it manually and quote the price.',zlozony:'The model is very complex. Send it anyway – we will check it manually and quote the price.',otwarty:'The model is not a closed solid (holes or loose surfaces), so we do not calculate a price here. Send it anyway – we will check it manually.'}};
-  const analiza=p=>{let V=0,mn=[1e9,1e9,1e9],mx=[-1e9,-1e9,-1e9];
+  const analiza=p=>{let V=0,A=0,mn=[1e9,1e9,1e9],mx=[-1e9,-1e9,-1e9];
     for(let i=0;i<p.length;i+=9){const a=[p[i],p[i+1],p[i+2]],b=[p[i+3],p[i+4],p[i+5]],c=[p[i+6],p[i+7],p[i+8]];
       V+=(a[0]*(b[1]*c[2]-b[2]*c[1])-a[1]*(b[0]*c[2]-b[2]*c[0])+a[2]*(b[0]*c[1]-b[1]*c[0]))/6;
+      {const u=[b[0]-a[0],b[1]-a[1],b[2]-a[2]],w=[c[0]-a[0],c[1]-a[1],c[2]-a[2]];A+=Math.hypot(u[1]*w[2]-u[2]*w[1],u[2]*w[0]-u[0]*w[2],u[0]*w[1]-u[1]*w[0])/2;}
       for(const q of [a,b,c])for(let k=0;k<3;k++){if(q[k]<mn[k])mn[k]=q[k];if(q[k]>mx[k])mx[k]=q[k];}}
-    return {cm3:Math.abs(V)/1000,wym:mx.map((x,k)=>x-mn[k])};};
+    return {cm3:Math.abs(V)/1000,cm2:A/100,wym:mx.map((x,k)=>x-mn[k])};};
   // ---- three.js ładowany dopiero po wgraniu pliku ----
   let threeP=null;const three=()=>threeP||(threeP=new Promise((ok,nie)=>{if(window.THREE)return ok();const s=document.createElement('script');s.src='/three.min.js';s.onload=ok;s.onerror=nie;document.head.appendChild(s);}));
   let scena=null;
@@ -1289,12 +1296,15 @@ h1 i{font-weight:600;display:block}
   let ost=null;
   const licz=()=>{const t=T[document.documentElement.lang||'de'];if(!model){$('k-cena').textContent='–';$('k-szt').textContent='';return;}
     const matN=W.querySelector('[data-grupa="mat"] [aria-pressed="true"]').textContent.trim(),M=KALK.mat[matN]||KALK.mat.PLA;
-    const q=wybrane('q')||'standard',i=wybrane('i')||'standard',n=Math.max(1,+$('sztuki').textContent||1);
-    const g=model.cm3*M.g*KALK.wypelnienie[i]*KALK.podpory;const h=g/(KALK.jakosc[q]*(M.wolniej||1));
-    const szt=(g*(KALK.zaGram[matN]||KALK.zaGram.PLA)+KALK.przygotowanie)*KALK.jakoscMnoznik[q];const suma=Math.max(KALK.minimum,szt*n);
+    const q=wybrane('q')||'standard',i=wybrane('i')||'standard',fl=wybrane('f')||'basic',n=Math.max(1,+$('sztuki').textContent||1);
+    const P=KALK.wypelnienie[i]||KALK.wypelnienie.standard,sc=Math.min(model.cm3,model.cm2*P.t);
+    const g=(sc+(model.cm3-sc)*P.f)*M.g*KALK.podpory;
+    const h=KALK.czasStart+KALK.czasScianki*model.cm2/(KALK.warstwa[q]||0.2)*P.w*(M.wolniej||1);
+    const kg=(KALK.zaKg[matN]||KALK.zaKg.PLA)+(fl==='spezial'?KALK.specjalny:0);
+    const szt=g*kg/1000+(h-KALK.czasStart)*KALK.zaGodzine;const suma=KALK.przygotowanie+KALK.czasStart*KALK.zaGodzine+szt*n;
     const sf=n>1?' ('+t.k_szt+')':'';$('k-w').textContent=fmt(g,0)+' g'+sf;$('k-t').textContent=czas(h)+sf;
-    $('k-cena').textContent='≈ '+fmt(Math.round(suma),0)+' €';$('k-szt').textContent=n>1?'≈ '+fmt(Math.round(szt),0)+' € '+t.k_szt+' × '+n:'';
-    ost={p:fmt(Math.round(suma),0),w:fmt(g*n,0),t:czas(h*n),q:t['k_q'+({szybka:1,standard:2,wysoka:3})[q]],i:t['k_i'+({standard:1,wyzsze:2,premium:3})[i]]};};
+    $('k-cena').textContent='≈ '+fmt(Math.round(suma),0)+' €';$('k-szt').textContent=n>1?'≈ '+fmt(Math.round(suma/n),0)+' € '+t.k_szt+' × '+n:'';
+    ost={p:fmt(Math.round(suma),0),w:fmt(g*n,0),t:czas(KALK.czasStart+(h-KALK.czasStart)*n),q:t['k_q'+({szybka:1,standard:2,wysoka:3})[q]],i:t['k_i'+({standard:1,wyzsze:2,premium:3})[i]]};};
   const wczytaj=async f=>{model=null;ost=null;pv.classList.remove('ma','blad');info.textContent=T[document.documentElement.lang||'de'].k_load;['k-vol','k-dim','k-w','k-t'].forEach(i=>$(i).textContent='–');
     try{if(f.size>52428800)throw 'gross';const buf=await f.arrayBuffer();const p=/\.3mf$/i.test(f.name)?await czytaj3MF(buf):czytajSTL(buf);if(p.length<9||p.some(x=>!isFinite(x)))throw 'pusty';const sc=sprawdz(p);if(sc)throw sc;
       model=analiza(p);$('k-vol').textContent=fmt(model.cm3,1)+' cm³';$('k-dim').textContent=model.wym.map(x=>fmt(x,x<1?2:0)).join(' × ')+' mm';
