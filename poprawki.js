@@ -22,7 +22,7 @@
 /* Poprawki 28.10.2026 (2/2): formularz wysyła dane i plik (STL, 3MF, zdjęcie, PDF) prosto na dpx369@gmail.com
    przez Google Apps Script (konto dpx369). Zamiast otwierania programu pocztowego. */
 (function(){
- var URL_SKRYPTU='__URL_SKRYPTU__';
+ var URL_SKRYPTU='https://script.google.com/macros/s/AKfycbw7ceQCslGjrgpgRRAUH_XDOx5jErVlY-SXowUebrwzSE_SMR_nuyKiAo4kqkLcvyek/exec';
  var MAX=25*1024*1024;
  var form=document.getElementById('formularz'); if(!form) return;
  var wplik=document.getElementById('w-plik');
