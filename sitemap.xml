@@ -108,7 +108,4 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/en/contact/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalpower.art/kontakt/"/>
     <priority>0.8</priority></url>
-  <url><loc>https://digitalpower.art/impressum.html</loc><priority>0.2</priority></url>
-  <url><loc>https://digitalpower.art/datenschutz.html</loc><priority>0.2</priority></url>
-  <url><loc>https://digitalpower.art/ki-hinweis.html</loc><priority>0.2</priority></url>
 </urlset>
