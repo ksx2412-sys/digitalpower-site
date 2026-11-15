@@ -74,3 +74,7 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import tresc_druk3d
 tresc_druk3d.uruchom()
+
+# Link do sklepu Etsy (15.11.2026)
+import link_etsy
+link_etsy.uruchom()
