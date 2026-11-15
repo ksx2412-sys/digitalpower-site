@@ -31,6 +31,7 @@ CSS = ('<style>.seo-blok{margin:clamp(56px,8vw,104px) 0 0;padding-top:clamp(40px
        '.seo-faq details p{margin:0 0 16px;color:var(--tekst-2);font-size:15.5px;line-height:1.6}'
        'html:not([lang="de"]) .seo-blok[lang="de"],html:not([lang="pl"]) .seo-blok[lang="pl"]{display:none}'
        '@media (max-width:980px){.seo-karty{grid-template-columns:repeat(2,minmax(0,1fr))}}'
+       '.seo-blok .podtytul{color:var(--akc,var(--czerwien))}.seo-blok .seo-karty .material{border-left:3px solid var(--akc,var(--czerwien))}'
        '.seo-blok .btn-czerwony{background:var(--czerwien);color:#fff;box-shadow:0 10px 30px -8px #ff4b5caa}'
        '.seo-blok .btn-czerwony:hover{background:#ff6a78}'
        '@media (max-width:560px){.seo-karty{grid-template-columns:1fr}}</style>')
@@ -105,11 +106,11 @@ def blok(j, t):
     faq = ''.join('<details><summary>%s</summary><p>%s</p></details>' % (esc(a), esc(b)) for a, b in t['faq'])
     ld = {'@context': 'https://schema.org', '@type': 'FAQPage', 'inLanguage': j,
           'mainEntity': [{'@type': 'Question', 'name': a, 'acceptedAnswer': {'@type': 'Answer', 'text': b}} for a, b in t['faq']]}
-    return ('<div class="seo-blok" %s lang="%s">@CSS@<h2>%s</h2><p>%s</p><h3 class="podtytul">%s</h3><div class="seo-karty">%s</div>'
-            '<h3 class="podtytul">%s</h3><div class="seo-faq">%s</div><a class="btn btn-czerwony" href="%s">%s</a>'
+    return ('<div class="seo-blok" %s lang="%s"@STYL@>@CSS@<h2>%s</h2><p>%s</p><h3 class="podtytul">%s</h3><div class="seo-karty">%s</div>'
+            '<h3 class="podtytul">%s</h3><div class="seo-faq">%s</div><a class="@BTN@" href="%s">%s</a>'
             '<script type="application/ld+json">%s</script></div>'
             % (ZN, j, esc(t['h2']), esc(t['p']), esc(t['kt']), karty, esc(t['ft']), faq, t['kontakt'], esc(t['btn']),
-               json.dumps(ld, ensure_ascii=False))).replace('@CSS@', CSS)
+               json.dumps(ld, ensure_ascii=False))).replace('@CSS@', CSS).replace('@BTN@', t.get('btn_klasa', 'btn btn-czerwony')).replace('@STYL@', ' style="%s"' % t['styl'] if t.get('styl') else '')
 
 
 def uruchom():

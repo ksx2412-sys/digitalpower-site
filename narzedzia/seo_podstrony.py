@@ -78,3 +78,7 @@ tresc_druk3d.uruchom()
 # Link do sklepu Etsy (15.11.2026)
 import link_etsy
 link_etsy.uruchom()
+
+# Własna treść podstron dronów i marketingu (15.11.2026)
+import tresc_podstron
+tresc_podstron.uruchom()
