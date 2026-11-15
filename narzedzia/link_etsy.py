@@ -13,6 +13,12 @@ IKONA = ('<a href="%s" target="_blank" rel="noopener noreferrer" aria-label="Ets
          '<path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></a>') % ETSY
 
 
+HERO = ('<a class="btn btn-drugi btn-duzy" data-etsy-hero href="%s" target="_blank" rel="noopener noreferrer">'
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
+        '<path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>'
+        '<span>Etsy-Shop</span></a>') % ETSY
+
+
 def uruchom():
     tr = json.loads(re.search(r'window\.__TR=(\{.*?\});', (ROOT / 'trasy.js').read_text('utf-8')).group(1))
     pliki = sorted({ROOT / s.strip('/') / 'index.html' for t in tr.values() for s in t.values()})
@@ -23,7 +29,10 @@ def uruchom():
             h = re.sub(r'(<nav class="social[^>]*>.*?aria-label="Facebook">.*?</a>)(</nav>)', lambda m: m.group(1) + '\n    ' + IKONA + m.group(2), h, flags=re.S)
             # dane strukturalne firmy
             h = h.replace(FB + ']', FB + ', "%s"]' % ETSY, 1)
-            plik.write_text(h, 'utf-8')
+        if 'data-etsy-hero' not in h:
+            # drugi przycisk na ekranie startowym
+            h = re.sub(r'(<a class="btn btn-glowny btn-duzy btn-start".*?</a>)', lambda m: m.group(1) + '\n        ' + HERO, h, count=1, flags=re.S)
+        plik.write_text(h, 'utf-8')
         print('etsy ok', plik.relative_to(ROOT), h.count(ETSY))
 
 
