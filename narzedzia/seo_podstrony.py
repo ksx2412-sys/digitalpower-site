@@ -68,3 +68,9 @@ t = sm.read_text('utf-8')
 t2 = re.sub(r'\s*<url><loc>https://digitalpower\.art/(impressum|datenschutz|ki-hinweis)\.html</loc>.*?</url>', '', t)
 sm.write_text(t2, 'utf-8')
 print('sitemap: usunięto', t.count('<url>') - t2.count('<url>'), 'stron prawnych')
+
+# Własna treść podstrony druku 3D (15.11.2026)
+import sys
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import tresc_druk3d
+tresc_druk3d.uruchom()
