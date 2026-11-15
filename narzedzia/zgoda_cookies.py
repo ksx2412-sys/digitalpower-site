@@ -7,7 +7,7 @@ Identyfikatory wpisuje się na górze pliku zgoda.js. Uruchamiany automatycznie 
 import json, re, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-TAG = '<script src="/zgoda.js?v=20261115b" defer></script>'
+TAG = '<script src="/zgoda.js?v=20261115c" defer></script>'
 DODAJ = {
     'script-src': 'https://connect.facebook.net https://www.googletagmanager.com',
     'img-src': 'https://www.facebook.com https://www.googletagmanager.com https://*.google-analytics.com https://www.google.com https://www.google.de https://googleads.g.doubleclick.net',

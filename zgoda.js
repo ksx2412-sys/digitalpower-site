@@ -2,7 +2,7 @@
    Nic się nie ładuje, dopóki odwiedzający nie kliknie „Akzeptieren”.
    Dopóki oba identyfikatory poniżej są puste, skrypt nie robi nic i baner się nie pokazuje. */
 (function(){
-  var META_PIXEL = '1861984581660593';   // identyfikator Piksela Meta (same cyfry)
+  var META_PIXEL = '2628116907652058';   // identyfikator Piksela Meta (same cyfry)
   var GOOGLE_TAG = '';   // identyfikator tagu Google (G-… lub AW-…)
   var GOOGLE_LEAD = '';  // etykieta konwersji Google Ads „zapytanie” (AW-…/…), opcjonalnie
 
