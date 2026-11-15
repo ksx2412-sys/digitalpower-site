@@ -82,3 +82,7 @@ link_etsy.uruchom()
 # Własna treść podstron dronów i marketingu (15.11.2026)
 import tresc_podstron
 tresc_podstron.uruchom()
+
+# Baner zgody + Piksel Meta + tag Google (15.11.2026)
+import zgoda_cookies
+zgoda_cookies.uruchom()
