@@ -7,7 +7,7 @@ Identyfikatory wpisuje się na górze pliku zgoda.js. Uruchamiany automatycznie 
 import json, re, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-TAG = '<script src="/zgoda.js?v=20261115" defer></script>'
+TAG = '<script src="/zgoda.js?v=20261115b" defer></script>'
 DODAJ = {
     'script-src': 'https://connect.facebook.net https://www.googletagmanager.com',
     'img-src': 'https://www.facebook.com https://www.googletagmanager.com https://*.google-analytics.com https://www.google.com https://www.google.de https://googleads.g.doubleclick.net',
@@ -37,8 +37,8 @@ def uruchom():
     for plik in pliki:
         h = plik.read_text('utf-8')
         h = re.sub(r'(<meta http-equiv="Content-Security-Policy" content=")([^"]*)(")', csp, h, count=1)
-        if '/zgoda.js' not in h:
-            h = h.replace('<script src="/poprawki.js', TAG + '\n<script src="/poprawki.js', 1)
+        h = re.sub(r'<script src="/zgoda\.js[^>]*></script>\n?', '', h)
+        h = h.replace('<script src="/poprawki.js', TAG + '\n<script src="/poprawki.js', 1)
         plik.write_text(h, 'utf-8')
     print('zgoda cookies ok', len(pliki))
 

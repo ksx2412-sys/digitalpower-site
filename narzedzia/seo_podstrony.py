@@ -86,3 +86,7 @@ tresc_podstron.uruchom()
 # Baner zgody + Piksel Meta + tag Google (15.11.2026)
 import zgoda_cookies
 zgoda_cookies.uruchom()
+
+# Polityka prywatności: zgoda na cookies i Piksel Meta (15.11.2026)
+import datenschutz_pixel
+datenschutz_pixel.uruchom()
