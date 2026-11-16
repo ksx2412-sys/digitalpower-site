@@ -3,16 +3,16 @@
    Dopóki oba identyfikatory poniżej są puste, skrypt nie robi nic i baner się nie pokazuje. */
 (function(){
   var META_PIXEL = '2628116907652058';   // identyfikator Piksela Meta (same cyfry)
-  var GOOGLE_TAG = '';   // identyfikator tagu Google (G-… lub AW-…)
+  var GOOGLE_TAG = 'GTM-KVN654NS';   // kontener Google Tag Manager (GTM-…); tag GA4 ustawia się w GTM
   var GOOGLE_LEAD = '';  // etykieta konwersji Google Ads „zapytanie” (AW-…/…), opcjonalnie
 
   if(!META_PIXEL && !GOOGLE_TAG) return;
   var KLUCZ='dp_zgoda_v1', d=document, w=window, zaladowane=false;
   var kto=[META_PIXEL?'Meta':'',GOOGLE_TAG?'Google':''].filter(Boolean);
   var T={
-    de:{t:'Wir nutzen Cookies von '+kto.join(' und ')+', um zu messen, ob unsere Werbung funktioniert – nur mit Ihrer Zustimmung.',w:'Mehr dazu in der Datenschutzerklärung',tak:'Akzeptieren',nie:'Ablehnen',u:'Cookie-Einstellungen',p:'/datenschutz.html'},
-    pl:{t:'Używamy plików cookie '+kto.join(' i ')+', żeby mierzyć, czy nasze reklamy działają – tylko za Twoją zgodą.',w:'Więcej w polityce prywatności',tak:'Akceptuję',nie:'Odrzucam',u:'Ustawienia cookies',p:'/polityka-prywatnosci.html'},
-    en:{t:'We use cookies from '+kto.join(' and ')+' to measure whether our ads work – only with your consent.',w:'More in the privacy policy',tak:'Accept',nie:'Decline',u:'Cookie settings',p:'/privacy-policy.html'}
+    de:{t:'Wir nutzen Cookies von '+kto.join(' und ')+', um zu messen, wie unsere Website genutzt wird und ob unsere Werbung wirkt – nur mit Ihrer Zustimmung.',w:'Mehr dazu in der Datenschutzerklärung',tak:'Akzeptieren',nie:'Ablehnen',u:'Cookie-Einstellungen',p:'/datenschutz.html'},
+    pl:{t:'Używamy plików cookie '+kto.join(' i ')+', żeby mierzyć, jak korzysta się ze strony i czy nasze reklamy działają – tylko za Twoją zgodą.',w:'Więcej w polityce prywatności',tak:'Akceptuję',nie:'Odrzucam',u:'Ustawienia cookies',p:'/polityka-prywatnosci.html'},
+    en:{t:'We use cookies from '+kto.join(' and ')+' to measure how the website is used and whether our ads work – only with your consent.',w:'More in the privacy policy',tak:'Accept',nie:'Decline',u:'Cookie settings',p:'/privacy-policy.html'}
   };
   function jez(){var l=(d.documentElement.lang||'de').slice(0,2);return T[l]?l:'de';}
   function czytaj(){try{return localStorage.getItem(KLUCZ);}catch(e){return null;}}
@@ -28,20 +28,30 @@
     }
     if(GOOGLE_TAG){
       w.dataLayer=w.dataLayer||[]; w.gtag=function(){w.dataLayer.push(arguments);};
-      w.gtag('consent','default',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});
-      w.gtag('js',new Date()); w.gtag('config',GOOGLE_TAG);
-      var s=d.createElement('script'); s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(GOOGLE_TAG); d.head.appendChild(s);
+      w.gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'granted'});
+      if(GOOGLE_TAG.indexOf('GTM-')===0){
+        w.dataLayer.push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+        var g=d.createElement('script'); g.async=true; g.src='https://www.googletagmanager.com/gtm.js?id='+encodeURIComponent(GOOGLE_TAG); d.head.appendChild(g);
+      } else {
+        w.gtag('js',new Date()); w.gtag('config',GOOGLE_TAG);
+        var s=d.createElement('script'); s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(GOOGLE_TAG); d.head.appendChild(s);
+      }
     }
+  }
+  // Przy GTM zdarzenia idą przez dataLayer (GTM je odbiera), przy bezpośrednim tagu przez gtag.
+  function gaZdarzenie(nazwa,parametry){
+    if(GOOGLE_TAG.indexOf('GTM-')===0){ var o={event:nazwa}; for(var k in parametry) o[k]=parametry[k]; w.dataLayer.push(o); }
+    else w.gtag('event',nazwa,parametry||{});
   }
   function odslona(){
     if(!zaladowane) return;
     if(w.fbq) w.fbq('track','PageView');
-    if(w.gtag) w.gtag('event','page_view',{page_location:location.href,page_title:d.title});
+    if(w.gtag) gaZdarzenie('page_view',{page_location:location.href,page_title:d.title});
   }
   function zapytanie(){
     if(!zaladowane) return;
     if(w.fbq) w.fbq('track','Lead');
-    if(w.gtag){ w.gtag('event','generate_lead'); if(GOOGLE_LEAD) w.gtag('event','conversion',{send_to:GOOGLE_LEAD}); }
+    if(w.gtag){ gaZdarzenie('generate_lead'); if(GOOGLE_LEAD) w.gtag('event','conversion',{send_to:GOOGLE_LEAD}); }
   }
 
   // Strona przełącza podstrony bez przeładowania – liczymy każdą odsłonę.
