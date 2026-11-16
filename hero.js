@@ -10,9 +10,12 @@
     s.type = 'video/mp4';
     v.appendChild(s);
     v.addEventListener('playing', function () { v.classList.add('on'); }, { once: true });
+    v.muted = true;
     v.load();
     var p = v.play();
     if (p && p.catch) p.catch(function () {});
+    v.addEventListener('canplay', function () { var q = v.play(); if (q && q.catch) q.catch(function () {}); }, { once: true });
+    v.addEventListener('click', function () { if (v.paused) { var r = v.play(); if (r && r.catch) r.catch(function () {}); } });
   }
   if (!mobile) start();
   else if (document.readyState === 'complete') setTimeout(start, 300);
