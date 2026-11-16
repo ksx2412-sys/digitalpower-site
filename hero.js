@@ -14,3 +14,15 @@
   if (document.readyState === 'complete') setTimeout(start, 300);
   else window.addEventListener('load', function () { setTimeout(start, 300); });
 })();
+
+// Plakaty filmów poniżej ekranu ładują się dopiero, gdy zbliżają się do widoku.
+(function () {
+  var vids = document.querySelectorAll('video[data-poster]');
+  if (!vids.length) return;
+  function set(v) { v.setAttribute('poster', v.getAttribute('data-poster')); v.removeAttribute('data-poster'); }
+  if (!('IntersectionObserver' in window)) { vids.forEach(set); return; }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { if (e.isIntersecting) { var v = e.target; set(v); if (v.hasAttribute('data-autoplay')) { v.play().catch(function () {}); } io.unobserve(v); } });
+  }, { rootMargin: '400px 0px' });
+  vids.forEach(function (v) { io.observe(v); });
+})();
