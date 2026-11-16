@@ -16,7 +16,7 @@ STRONY = [
   'styl': '--akc:var(--niebieski);' + PAD,
   'h2': 'Drohnenaufnahmen in Dortmund, im Ruhrgebiet und in ganz NRW',
   'p': 'Wir fliegen in Dortmund und Umgebung – bis 20 km ohne Anfahrtskosten. Weitere Einsätze in NRW und auf Anfrage '
-       'deutschlandweit. Die Anfahrt steht dann vorab im Angebot.',
+       'deutschlandweit. Die Anfahrt steht dann vorab im Angebot. Drohnenaufnahmen liefern wir auch direkt für Ihre Website und Werbung – und Digital Marketing machen wir mit KI-Unterstützung: Texte, Bilder und Anzeigen für Website und Social Media.',
   'kt': 'Wofür Sie Drohnenaufnahmen nutzen',
   'karty': [
    ('Immobilien', 'Haus, Grundstück und Lage in einem Bild – für Exposé, Verkauf und Vermietung.'),
@@ -47,7 +47,7 @@ STRONY = [
   'styl': '--akc:var(--niebieski);' + PAD,
   'h2': 'Zdjęcia i filmy z drona w Dortmundzie, Zagłębiu Ruhry i całym NRW',
   'p': 'Latamy w Dortmundzie i okolicy – do 20 km bez kosztów dojazdu. Dalsze zlecenia w NRW, a na życzenie w całych '
-       'Niemczech. Koszt dojazdu podajemy wtedy z góry w wycenie.',
+       'Niemczech. Koszt dojazdu podajemy wtedy z góry w wycenie. Zdjęcia z drona robimy też bezpośrednio dla Twojej strony i reklamy – a digital marketing prowadzimy z pomocą AI: teksty, zdjęcia i reklamy na stronę i do social mediów.',
   'kt': 'Do czego przydają się ujęcia z drona',
   'karty': [
    ('Nieruchomości', 'Dom, działka i okolica na jednym ujęciu – do ogłoszenia sprzedaży lub wynajmu.'),

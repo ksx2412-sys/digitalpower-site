@@ -14,10 +14,10 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 ZN = 'data-seo-blok'
 
 STARY_T = '3D-Druck Service Dortmund – nach Datei, Foto oder Skizze'
-NOWY_T = '3D-Druck Service online – Versand deutschlandweit | Dortmund'
+NOWY_T = '3D-Druck Dortmund – Einzelstücke, Ersatzteile, Prototypen | Digital Power Art'
 STARY_O = ('3D-Druck auf Bambu Lab P1S: Einzelstück, Ersatzteil, Prototyp oder Serie aus PLA, PETG, ASA oder TPU. '
            'Preisrechner online, Abholung in Dortmund oder Versand.')
-NOWY_O = ('3D-Druck auf Bestellung nach Datei, Foto oder Skizze: Einzelstück, Ersatzteil, Prototyp oder Serie aus '
+NOWY_O = ('3D-Druck in Dortmund auf Bestellung: Einzelstück, Ersatzteil, Prototyp oder Serie aus '
           'PLA, PETG, ASA, TPU. Preisrechner online, Versand deutschlandweit.')
 
 CSS = ('<style>.seo-blok{margin:clamp(56px,8vw,104px) 0 0;padding-top:clamp(40px,6vw,72px);border-top:1px solid var(--linia)}'
