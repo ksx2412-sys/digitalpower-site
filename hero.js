@@ -15,6 +15,14 @@
     var p = v.play();
     if (p && p.catch) p.catch(function () {});
     v.addEventListener('canplay', function () { var q = v.play(); if (q && q.catch) q.catch(function () {}); }, { once: true });
+    // Zabezpieczenie: jeśli wideo nie ruszy w ciągu 1,5 s, ponownie ładujemy i startujemy je,
+    // a po 3 s pokazujemy kadr, żeby koń nie zostawał zamrożony.
+    setTimeout(function () {
+      if (!v.paused && v.readyState >= 3) return;
+      v.load();
+      var r = v.play(); if (r && r.catch) r.catch(function () {});
+    }, 1500);
+    setTimeout(function () { v.classList.add('on'); }, 3000);
     v.addEventListener('click', function () { if (v.paused) { var r = v.play(); if (r && r.catch) r.catch(function () {}); } });
   }
   if (!mobile) start();
