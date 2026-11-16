@@ -39,7 +39,7 @@ T = {
         etykieta='Märchen & Kinder', back='Startseite',
         h1='Märchen mit Moral für Kinder',
         lead='Geschichten, die unterhalten und etwas mitgeben: neue Folgen auf TikTok, Malbücher zum Ausmalen und Figuren aus unserer 3D-Druck-Werkstatt in Dortmund.',
-        btn_tiktok='Auf TikTok ansehen', btn_mal='Malbücher', lbl_tt='Auf TikTok ansehen', lbl_ig='Auf Instagram ansehen',
+        btn_tiktok='Auf TikTok ansehen', btn_mal='Malbücher', lbl_tt='Auf TikTok ansehen', lbl_ig='Auf Instagram ansehen', alt_hero='Fabel-Figuren vor einem Holzhaus mit dem Schild „Fabel“', alt_f='Gruppe der Fabel-Figuren auf einer warmen Decke', alt_b='Kleine Giraffe mit verschränkten Armen neben blauen Gummistiefeln und einem Regenschirm',
         kanaly_et='Zwei Kanäle', kanaly_h='Unsere Geschichten',
         kanaly_p='Märchen mit Moral auf fabelfabelfabel7 und Gutenachtgeschichten auf bajkibajeczkibaje. Beide Kanäle sind für Kinder von 3 bis 7 Jahren gemacht – und für Eltern, die gemeinsam schauen.',
         fabel_p='Märchen mit Moral – animierte Geschichten mit Figuren, die auch als 3D-Druck bei uns entstehen.',
@@ -74,7 +74,7 @@ T = {
         etykieta='Bajki i dzieci', back='Strona główna',
         h1='Bajki z morałem dla dzieci',
         lead='Historie, które bawią i czegoś uczą: nowe odcinki na TikToku, kolorowanki do pobrania i figurki z naszej pracowni druku 3D w Dortmundzie.',
-        btn_tiktok='Zobacz na TikToku', btn_mal='Kolorowanki', lbl_tt='Zobacz na TikToku', lbl_ig='Zobacz na Instagramie',
+        btn_tiktok='Zobacz na TikToku', btn_mal='Kolorowanki', lbl_tt='Zobacz na TikToku', lbl_ig='Zobacz na Instagramie', alt_hero='Bohaterowie Fabel przed drewnianym domkiem z napisem „Fabel”', alt_f='Grupa bohaterów Fabel na miękkim kocu', alt_b='Mała żyrafa ze skrzyżowanymi rękami obok niebieskich kaloszy i kolorowego parasola',
         kanaly_et='Dwa kanały', kanaly_h='Nasze bajki',
         kanaly_p='Bajki z morałem na fabelfabelfabel7 i bajeczki na dobranoc na bajkibajeczkibaje. Oba kanały są dla dzieci w wieku 3–7 lat i dla rodziców, którzy oglądają razem.',
         fabel_p='Bajki z morałem – animowane historie z bohaterami, którzy powstają u nas także jako wydruki 3D.',
@@ -109,7 +109,7 @@ T = {
         etykieta='Fairy tales & kids', back='Home',
         h1='Fairy tales with a moral for kids',
         lead='Stories that entertain and leave something behind: new episodes on TikTok, colouring books and figures from our 3D-printing workshop in Dortmund.',
-        btn_tiktok='Watch on TikTok', btn_mal='Colouring books', lbl_tt='Watch on TikTok', lbl_ig='Watch on Instagram',
+        btn_tiktok='Watch on TikTok', btn_mal='Colouring books', lbl_tt='Watch on TikTok', lbl_ig='Watch on Instagram', alt_hero='Fabel characters in front of a wooden house with a Fabel sign', alt_f='Group of Fabel characters on a soft blanket', alt_b='Small giraffe with crossed arms next to blue rain boots and a colourful umbrella',
         kanaly_et='Two channels', kanaly_h='Our stories',
         kanaly_p='Fairy tales with a moral on fabelfabelfabel7 and bedtime stories on bajkibajeczkibaje. Both channels are made for children aged 3 to 7 and for parents who watch together.',
         fabel_p='Fairy tales with a moral – animated stories with characters we also make as 3D prints.',
@@ -314,7 +314,7 @@ def strona(j):
 <title>{e(t['title'])}</title>
 <meta name="description" content="{e(t['desc'])}">
 <link rel="canonical" href="{URL[j]}">{hreflang}
-<meta property="og:type" content="website"><meta property="og:url" content="{URL[j]}"><meta property="og:title" content="{e(t['title'])}"><meta property="og:description" content="{e(t['desc'])}"><meta property="og:image" content="https://digitalpower.art/media/bajki-og.jpg"><meta name="twitter:card" content="summary_large_image">
+<meta property="og:type" content="website"><meta property="og:url" content="{URL[j]}"><meta property="og:title" content="{e(t['title'])}"><meta property="og:description" content="{e(t['desc'])}"><meta property="og:image" content="https://digitalpower.art/media/fabel-og-bohaterowie.jpg"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/media/logo-circle.png">
 <script type="application/ld+json">{json.dumps(page_ld, ensure_ascii=False)}</script>
 <script type="application/ld+json">{json.dumps(faq_ld, ensure_ascii=False)}</script>
@@ -329,7 +329,7 @@ def strona(j):
 </header>
 <main>
 <section class="kino" aria-labelledby="tytul">
-  <img class="kinobg" src="/media/bajki-hero-800.webp" srcset="/media/bajki-hero-800.webp 800w, /media/bajki-hero-1600.webp 1600w" sizes="100vw" width="1600" height="900" alt="" aria-hidden="true" fetchpriority="high">
+  <img class="kinobg" src="/media/fabel-bohaterowie-naglowek-800.webp" srcset="/media/fabel-bohaterowie-naglowek-800.webp 800w, /media/fabel-bohaterowie-naglowek-1600.webp 1600w" sizes="100vw" width="1600" height="900" alt="{e(t['alt_hero'])}" fetchpriority="high">
   <span class="znacznik-ki">{e(t['ki'])}</span>
   <div class="kino-tekst">
     <span class="sekcja-etykieta">{e(t['etykieta'])}</span>
@@ -347,7 +347,7 @@ def strona(j):
     <div class="glowa odslon"><span class="sekcja-etykieta">{e(t['kanaly_et'])}</span><h2 id="kanaly-h">{e(t['kanaly_h'])}</h2><p>{e(t['kanaly_p'])}</p></div>
     <div class="karty">
       <article class="karta odslon">
-        <div class="kadr"><img loading="lazy" src="/media/bajki-fabel-800.webp" width="800" height="450" alt=""><span class="znacznik-ki">{e(t['ki'])}</span></div>
+        <div class="kadr"><img loading="lazy" src="/media/fabel-grupa-na-kocu-800.webp" width="800" height="450" alt="{e(t['alt_f'])}"><span class="znacznik-ki">{e(t['ki'])}</span></div>
         <div class="karta-tresc">
           <span class="rytm"><i></i>{e(t['rytm_f'])}</span>
           <h3 translate="no">fabelfabelfabel7</h3>
@@ -359,7 +359,7 @@ def strona(j):
         </div>
       </article>
       <article class="karta odslon">
-        <div class="kadr"><img loading="lazy" src="/media/bajki-bajki-800.webp" width="800" height="450" alt=""></div>
+        <div class="kadr"><img loading="lazy" src="/media/fabel-zyrafa-w-deszczu-800.webp" width="800" height="450" alt="{e(t['alt_b'])}"></div>
         <div class="karta-tresc">
           <span class="rytm"><i></i>{e(t['rytm_b'])}</span>
           <h3 translate="no">bajkibajeczkibaje</h3>
