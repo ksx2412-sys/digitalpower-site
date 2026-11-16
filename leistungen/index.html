@@ -12,6 +12,7 @@
 <link rel="preload" as="image" href="/media/poster.jpg">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Digital 3D Power", "url": "https://digitalpower.art/", "image": "https://digitalpower.art/media/poster.jpg", "logo": "https://digitalpower.art/media/logo-circle.png", "email": "dpx369@gmail.com", "address": {"@type": "PostalAddress", "streetAddress": "Goslarstraße 5c", "postalCode": "44359", "addressLocality": "Dortmund", "addressRegion": "NRW", "addressCountry": "DE"}, "areaServed": "Dortmund, NRW", "knowsLanguage": ["de", "pl"], "sameAs": ["https://www.instagram.com/digitalpower.art/", "https://www.tiktok.com/@digitalpower.art", "https://www.facebook.com/profile.php?id=61590071507349", "https://www.etsy.com/shop/DigitalPowerArt3D"], "makesOffer": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "3D-Druck"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Drohnenaufnahmen"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Digital Marketing"}}]}</script>
 
+<style>.hero-foto{display:none}#film{display:block}@media (max-width:640px){.hero-foto{display:block;position:relative;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;margin-top:76px}#film{position:absolute!important;top:76px;bottom:auto;left:0;right:auto;width:100%;height:auto;margin:0;aspect-ratio:16/9;opacity:0;transition:opacity .8s ease;z-index:1}#film.on{opacity:1}}</style>
 <style>@font-face{font-family:'Fraunces';font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/fraunces-latin-ext-600-normal.woff2) format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 @font-face{font-family:'Fraunces';font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/fraunces-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:'Fraunces';font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/fraunces-latin-ext-700-normal.woff2) format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
@@ -681,9 +682,8 @@ h1 i{font-weight:600;display:block}
 
 <main id="start" lang="de">
   <section class="scena" id="ekran-start" aria-label="Digital 3D Power" hidden>
-    <video id="film" muted playsinline autoplay preload="auto" poster="/media/poster.jpg" aria-label="Koń zamienia się w model cyfrowy i zostaje wydrukowany w 3D">
-      <source src="/media/hero.mp4" type="video/mp4">
-    </video>
+    <img class="hero-foto" src="/media/poster.webp" width="1280" height="720" alt="Koń zamienia się w model cyfrowy i zostaje wydrukowany w 3D" fetchpriority="high">
+    <video id="film" muted playsinline preload="metadata" poster="/media/poster.webp" width="1280" height="720" aria-label="Koń zamienia się w model cyfrowy i zostaje wydrukowany w 3D" autoplay></video>
     <span class="hero-ki" data-t="hero_ki">Animation mit KI erstellt</span>
     <button class="powtorz" type="button" id="powtorz" aria-label="Odtwórz film ponownie">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>
@@ -1395,6 +1395,7 @@ h1 i{font-weight:600;display:block}
 .hero-ki{top:auto;bottom:10px;right:clamp(16px,4vw,48px);font-size:10px;font-weight:500;letter-spacing:0;color:#ffffffa6;background:#03060d8c;padding:1px 6px;border-radius:4px;opacity:1}
 @media (max-width:900px){.hero-ki{top:calc(76px + 56.25vw - 24px);bottom:auto;left:8px;right:auto}}
 </style>
+<script src="/hero.js?v=20261116e" defer></script>
 <script src="/zgoda.js?v=20261115c" defer></script>
 <script src="/poprawki.js?v=20261028" defer></script>
 </html>
