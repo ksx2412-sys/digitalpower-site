@@ -5,7 +5,7 @@
   function start() {
     if (v.querySelector('source')) return;
     var s = document.createElement('source');
-    s.src = '/media/hero.mp4';
+    s.src = window.matchMedia('(max-width:640px)').matches ? '/media/hero-m.mp4' : '/media/hero.mp4';
     s.type = 'video/mp4';
     v.appendChild(s);
     v.addEventListener('playing', function () { v.classList.add('on'); }, { once: true });
