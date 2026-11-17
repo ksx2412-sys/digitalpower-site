@@ -1,0 +1,21 @@
+# Digital Power Art
+
+> Digital Power Art ist ein unabhängiges Kreativ- und Technologiestudio aus Dortmund (Nordrhein-Westfalen): individueller 3D-Druck, Drohnenaufnahmen und Videoproduktion, Webdesign, SEO, GEO und KI-Lösungen für Unternehmen und Privatkunden.
+
+## Wichtige Seiten
+
+- [Über uns](https://digitalpower.art/ueber-uns/): Unternehmensprofil, Leistungen, eigene Projekte, Kontakt
+- [Leistungen](https://digitalpower.art/leistungen/): Überblick über alle Dienstleistungen
+- [3D-Druck](https://digitalpower.art/3d-druck/): individuelle Fertigung mit dem Bambu Lab P1S
+- [Drohnenaufnahmen](https://digitalpower.art/drohnenaufnahmen/): Luftaufnahmen und Videos für Immobilien, Events und Unternehmen
+- [Digital Marketing](https://digitalpower.art/digital-marketing/): Webdesign, SEO, GEO und Content
+- [Kontakt](https://digitalpower.art/kontakt/): Projektanfragen und Zusammenarbeit
+
+## Polski
+
+- [O nas](https://digitalpower.art/pl/ueber-uns/): profil firmy po polsku
+- [Strona główna](https://digitalpower.art/pl/): druk 3D, drony, marketing cyfrowy i AI
+
+## Shop
+
+- [Etsy-Shop DigitalPowerArt3D](https://www.etsy.com/shop/DigitalPowerArt3D): eigene 3D-Druckprodukte
