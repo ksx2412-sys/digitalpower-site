@@ -2,6 +2,14 @@
    Nic się nie ładuje, dopóki odwiedzający nie kliknie „Akzeptieren”.
    Dopóki oba identyfikatory poniżej są puste, skrypt nie robi nic i baner się nie pokazuje. */
 (function(){
+  /* Kliknięcie w link do sklepu Etsy → zdarzenie „klik_etsy” w warstwie danych (dataLayer).
+     Nic nie ładuje się tu bez zgody; GTM wysyła zdarzenie do GA4 dopiero po akceptacji cookies. */
+  document.addEventListener('click', function(e){
+    var a = e.target && e.target.closest ? e.target.closest('a[href*="etsy.com"]') : null;
+    if(!a) return;
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({event: 'klik_etsy', etsy_url: a.href, etsy_miejsce: a.closest('nav,footer,section') ? (a.closest('footer') ? 'stopka' : (a.closest('.startowe-social') ? 'start' : 'inne')) : 'inne'});
+  }, true);
   var META_PIXEL = '2628116907652058';   // identyfikator Piksela Meta (same cyfry)
   var GOOGLE_TAG = 'GTM-KVN654NS';   // kontener Google Tag Manager (GTM-…); tag GA4 ustawia się w GTM
   var GOOGLE_LEAD = '';  // etykieta konwersji Google Ads „zapytanie” (AW-…/…), opcjonalnie
