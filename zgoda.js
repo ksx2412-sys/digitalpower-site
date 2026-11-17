@@ -11,7 +11,7 @@
     window.dataLayer.push({event: 'klik_etsy', etsy_url: a.href, etsy_miejsce: a.closest('nav,footer,section') ? (a.closest('footer') ? 'stopka' : (a.closest('.startowe-social') ? 'start' : 'inne')) : 'inne'});
   }, true);
   var META_PIXEL = '2628116907652058';   // identyfikator Piksela Meta (same cyfry)
-  var GOOGLE_TAG = 'GTM-KVN654NS';   // kontener Google Tag Manager (GTM-…); tag GA4 ustawia się w GTM
+  var GOOGLE_TAG = 'GTM-W94H254N';   // kontener Google Tag Manager (GTM-…); tag GA4 ustawia się w GTM
   var GOOGLE_LEAD = '';  // etykieta konwersji Google Ads „zapytanie” (AW-…/…), opcjonalnie
 
   if(!META_PIXEL && !GOOGLE_TAG) return;
