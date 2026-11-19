@@ -8,50 +8,35 @@
     <priority>1.0</priority></url>
   <url><loc>https://digitalpower.art/leistungen/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/leistungen/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://digitalpower.art/pl/oferta/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/en/services/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalpower.art/leistungen/"/>
     <priority>0.8</priority></url>
   <url><loc>https://digitalpower.art/3d-druck/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/3d-druck/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://digitalpower.art/pl/druk-3d/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/en/3d-printing/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalpower.art/3d-druck/"/>
     <priority>1.0</priority></url>
   <url><loc>https://digitalpower.art/drohnenaufnahmen/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/drohnenaufnahmen/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://digitalpower.art/pl/zdjecia-z-drona/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/en/drone-photography/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalpower.art/drohnenaufnahmen/"/>
     <priority>0.8</priority></url>
   <url><loc>https://digitalpower.art/digital-marketing/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/digital-marketing/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://digitalpower.art/pl/marketing-cyfrowy/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/en/digital-marketing/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalpower.art/digital-marketing/"/>
     <priority>0.8</priority></url>
   <url><loc>https://digitalpower.art/kontakt/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/kontakt/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://digitalpower.art/pl/kontakt/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/en/contact/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalpower.art/kontakt/"/>
     <priority>0.8</priority></url>
   <url><loc>https://digitalpower.art/maerchen/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/kontakt/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://digitalpower.art/pl/kontakt/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/en/contact/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalpower.art/kontakt/"/>
     <priority>0.8</priority></url>
   <url><loc>https://digitalpower.art/pl/bajki/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/kontakt/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://digitalpower.art/pl/kontakt/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/en/contact/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalpower.art/kontakt/"/>
     <priority>0.8</priority></url>
   <url><loc>https://digitalpower.art/en/fairy-tales/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/kontakt/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://digitalpower.art/pl/kontakt/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/en/contact/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalpower.art/kontakt/"/>
     <priority>0.8</priority></url>
   <url><loc>https://digitalpower.art/pl/</loc>
@@ -63,7 +48,6 @@
   <url><loc>https://digitalpower.art/pl/druk-3d/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://digitalpower.art/3d-druck/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://digitalpower.art/pl/druk-3d/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://digitalpower.art/en/3d-printing/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalpower.art/3d-druck/"/>
     <priority>1.0</priority></url>
   <url><loc>https://digitalpower.art/en/</loc>
