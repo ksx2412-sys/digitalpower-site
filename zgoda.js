@@ -101,7 +101,13 @@
   // Link „Cookie-Einstellungen” w stopce – zmiana decyzji w każdej chwili.
   function link(){
     var l=d.querySelector('footer a[href*="datenschutz"],footer a[href*="polityka-prywatnosci"],footer a[href*="privacy-policy"]');
-    if(!l||!l.parentNode||!l.parentNode.parentNode) return;
+    if(!l){ // strony prawne: brak stopki, link dopisujemy do nav.prawne
+      var nv=d.querySelector('nav.prawne'); if(!nv) return;
+      var a2=d.getElementById('zgoda-link');
+      if(!a2){a2=d.createElement('a'); a2.id='zgoda-link'; a2.href='#'; a2.addEventListener('click',function(e){e.preventDefault(); pokaz();}); nv.appendChild(a2);}
+      a2.textContent=T[jez()].u; return;
+    }
+    if(!l.parentNode||!l.parentNode.parentNode) return;
     var li=d.getElementById('zgoda-link');
     if(!li){li=d.createElement('li'); li.id='zgoda-link'; var a=d.createElement('a'); a.href='#'; a.addEventListener('click',function(e){e.preventDefault(); pokaz();}); li.appendChild(a); l.parentNode.parentNode.appendChild(li);}
     li.firstChild.textContent=T[jez()].u;
