@@ -12,7 +12,8 @@
   }, true);
   var META_PIXEL = '2628116907652058';   // identyfikator Piksela Meta (same cyfry)
   var GOOGLE_TAG = 'GTM-W94H254N';   // kontener Google Tag Manager (GTM-…); tag GA4 ustawia się w GTM
-  var GOOGLE_LEAD = '';  // etykieta konwersji Google Ads „zapytanie” (AW-…/…), opcjonalnie
+  var GOOGLE_LEAD = 'AW-18383294075/4iMECO2f58AdEPuc671E';  // etykieta konwersji Google Ads „Zapytanie” (konto Digital Power 346-565-0439)
+  var GOOGLE_ADS = GOOGLE_LEAD ? GOOGLE_LEAD.split('/')[0] : '';  // identyfikator tagu Google Ads (AW-…)
 
   if(!META_PIXEL && !GOOGLE_TAG) return;
   var KLUCZ='dp_zgoda_v1', d=document, w=window, zaladowane=false;
@@ -43,6 +44,11 @@
       } else {
         w.gtag('js',new Date()); w.gtag('config',GOOGLE_TAG);
         var s=d.createElement('script'); s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(GOOGLE_TAG); d.head.appendChild(s);
+      }
+      // Tag Google Ads (pomiar konwersji „Zapytanie”) – ładuje się razem z GTM, też dopiero po zgodzie.
+      if(GOOGLE_ADS && GOOGLE_TAG.indexOf('GTM-')===0){
+        w.gtag('js',new Date()); w.gtag('config',GOOGLE_ADS);
+        var sa=d.createElement('script'); sa.async=true; sa.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(GOOGLE_ADS); d.head.appendChild(sa);
       }
     }
   }
